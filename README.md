@@ -54,8 +54,43 @@ Este repositorio presenta la solución de una prueba técnica realizada en clase
 ## Autoría  
 Este proyecto fue desarrollado como material educativo para estudiantes de BIT +. Si tienes preguntas o sugerencias, no dudes en contactarme.  
 
-- **Autor:** Luisa Castaño Vanegas
-- **GitHub:** [LuisaCastano40](https://github.com/LuisaCastano40)  
-- **LinkedIn:** [Perfil de linkedIn](https://www.linkedin.com/in/luisacastanovanegas/) 
+- **Autor:** Esperanza carvajal torres
+- **GitHub:** [Esperanza carvajal](https://github.com/fullstack2025771/taller2.)  
+- **LinkedIn:** [Perfil de linkedIn](https://www.linkedin.com/in/esperanza-carvajal-torres-a35aa0355/) 
 
-¡Explora los ejemplos y adapta las soluciones a tus propios proyectos!
+## Taller 2.
+1. Se instala las dependencias que faltan con npm i,
+2. ng serve
+3. Se cambia la Ip por local host:9000
+4. Se trabaja con el servicio de Inicio se sesion y con el de Ejemplo 
+5. En login.service.ts se observa una logica muy parecida a la que se venia trabajando en el proyecto anterior.
+6. Hay cuatro metodos para verificar el inicio de sesion o autenticacion .
+7. Creamos el servicio Login.service.spect.ts ES para ejecutar las pruebas y probar, configuramos para simular  el cliente Http y providedHttpClient y el providedHttpClientTesting
+8. como siempre se configura el entorno de pruebe  
+9. Se definen grupos de pruebas con describe
+10 Se tiene el beforeEach el cual nos habre el entorno de pruebas
+11. Con  el comando ng test se abre de forma automatica se abre el navegador Karma y queda listo para ejecutar las pruebas en CHROME
+13. Definimos los casos individuales de prueba
+14. Definimos los grupos de pruebas con describe y los Mock para simular es decir falsa que nos sirva como ejemplo para hacer peticiones a una Api, y se coloca la configuracion inicial del entorno de pruebas.
+despues definimos los casos de pruebas
+15.Definimos funciones con credenciales y token con simulacion
+Utilizamos el metodo beforeEach Ante , se le dan los Providers.
+16.Definimos los casos de prueba por cada uno de los metodos en cuestion.
+simulamos la peticion POST para iniciar sesion, verificamos que la ruta sea correcta.
+17. Probamos el metodo login con credenciales falsas, para que nos de error.
+18.simulamos respuestas falsas y ejecutamos el proceso 
+18.Simulamos la peticionn al backend esperando que sea igual a la url dada.
+19. Obtenemos el token 
+entramos al localStorage con expect y toBe
+verificamos si esta logueado o no con isLoggedIn y el inicio de sesion con setItem se cierra sesion se valida el token y debe retornar ToBeNull
+
+
+Imagenes
+1.Abrir Karma
+<img src="./imagenes/frontendfoto1.PNG">
+2.Fallo Ejemplo
+<img src="./imagenes/frontendfoto2.PNG">
+3. Error en Inicio de sesion
+<img src="./imagenes/frontendfoto3.PNG">
+3..Funciono 
+<img src="./imagenes/frontendfoto4.PNG">

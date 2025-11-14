@@ -1,9 +1,14 @@
-import { TestBed } from '@angular/core/testing';
-import { EjemploService } from './ejemplo.service';
 
+import { TestBed } from '@angular/core/testing';  //configurar el entorno de pruebas
+import { EjemploService } from './ejemplo.service'; //servicios o componentes que quieran probar
+
+
+// grupo de pruebas
 describe('EjemploService', () => {
   let service: EjemploService;
 
+
+  //configurar entorno de pruebas y inyectar lo que se necesita
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [EjemploService]
@@ -17,3 +22,6 @@ describe('EjemploService', () => {
     expect(resultado).toBe(7);
   })
 });
+
+
+
